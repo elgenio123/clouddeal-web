@@ -43,8 +43,8 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #07ad90;;
-  font-weight: 400;
+  color: #555;;
+  font-weight: 700;
 }
 a:hover,
 a:focus {
@@ -72,7 +72,7 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 15px 5px 15px 15px;
   transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -95,7 +95,7 @@ hr {
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
-  margin: 9px 20px 0;
+  margin: 9px 20px;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;

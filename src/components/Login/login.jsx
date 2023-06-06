@@ -1,10 +1,13 @@
 import "../../../public/css/sign.css"
 import React,{useState} from 'react';
 import { Link } from "react-router-dom";
+import Animate from "../animate/Animate";
 
 function Login() {
 
   return (
+    <>
+    <Animate/>
     <div className="wrapper">
       <div className="rec-prism">
         <div className="face face-front">
@@ -38,6 +41,7 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

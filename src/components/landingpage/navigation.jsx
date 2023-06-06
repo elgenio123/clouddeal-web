@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-export const Navigation = (props) => {
+import Search from "../../assets/search.svg";
+ const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -29,7 +29,10 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <Link to="/">
+              <Link to="/"
+               className={({ isActive, isPending }) =>
+               isPending ? "link" : isActive ? "link" : ""
+             }>
               <a  className="page-scroll">
                 Home
               </a>
@@ -71,13 +74,17 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+            <Link to="/contact">
+              <a  className="page-scroll">
                 Contact
               </a>
+              </Link>
             </li>
+            <img src={Search} alt="search" id="search"/>
           </ul>
         </div>
       </div>
     </nav>
   );
 };
+export default Navigation

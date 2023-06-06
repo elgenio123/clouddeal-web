@@ -102,6 +102,25 @@ function Register() {
               <Link to="/login">
                 <span className="singin">Already a user? Sign in</span>
               </Link>
+              <div className="pets-gender">
+              <label htmlFor="pet-gender-female">Gender</label>
+              <div className="radio-container">
+                <input
+                  id="pet-gender-female"
+                  name="pet-gender"
+                  type="radio"
+                  value="female"
+                ></input>
+                <label htmlFor="pet-gender-female">Female</label>
+                <input
+                  id="pet-gender-male"
+                  name="pet-gender"
+                  type="radio"
+                  value="male"
+                ></input>
+                <label htmlFor="pet-gender-male">Male</label>
+              </div>
+              </div>
             </form>
           </div>
         </div>
