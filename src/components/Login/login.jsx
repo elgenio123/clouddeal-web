@@ -27,9 +27,11 @@ function Login() {
                 />
                 <label>password</label>
               </div>
+              <Link to="/dashboard">
               <div className="field-wrapper">
                 <input type="submit" />
               </div>
+              </Link>
               <Link to="/forgot-password">
                 <span className="psw">Forgot Password? </span>
               </Link>

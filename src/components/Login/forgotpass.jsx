@@ -1,8 +1,11 @@
 import React from 'react'
 import "./../../../public/css/sign.css"
+import Animate from '../animate/Animate';
 
 function Forgotpass() {
   return (
+    <>
+    <Animate />
     <div className="wrapper">
       <div className="rec-prism">
         <div className="face face-front">
@@ -24,6 +27,7 @@ function Forgotpass() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

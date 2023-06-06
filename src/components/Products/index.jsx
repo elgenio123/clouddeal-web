@@ -112,7 +112,7 @@ function Products() {
                   title={
                     <Typography.Paragraph>
                       Price: ${product.price}{" "}
-                      <Typography.Text delete type="danger">
+                      <Typography.Text delete type="success">
                         $
                         {parseFloat(
                           product.price +

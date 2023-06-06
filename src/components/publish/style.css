@@ -98,6 +98,10 @@
 	 font-weight: 700;
 	 font-size: 15px;
 }
+
+.radio-container label:hover {
+	cursor: pointer;
+}
  .right-container header {
 	 padding: 40px;
 }
@@ -128,6 +132,7 @@
 	 display: flex;
 	 justify-content: space-between;
 	 width: 100%;
+	 cursor: pointer;
 }
  .right-container .foot {
 	 align-items: center;
@@ -186,6 +191,7 @@
  .radio-container input[type="radio"] {
 	 display: none;
 }
+
  .radio-container input[type="radio"]:checked + label {
 	 background: rgb(6, 240, 162);
 	 border: 1px solid rgba(0, 0, 0, .1);

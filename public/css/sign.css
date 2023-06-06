@@ -64,6 +64,15 @@
 	 transition: all ease-in 0.25s;
 	 color: #999;
 }
+
+.gender{
+	position: absolute;
+	pointer-events: none;
+	font-size: 1.1em;
+	top: 57%;
+	color: #999;
+}
+
  .face .content .field-wrapper input[type="text"],.face .content .field-wrapper input[type="number"], .face .content .field-wrapper input[type="password"], .face .content .field-wrapper input[type="submit"],.face .content .field-wrapper input[type="email"], .face .content .field-wrapper textarea {
 	 -webkit-appearance: none;
 	 appearance: none;
