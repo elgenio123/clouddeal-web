@@ -3,8 +3,13 @@ import React, { Component, useState, createRef, useEffect } from "react";
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
+import Fab from '@mui/material/Fab';
+import { Navigate, useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 export default class ChatContent extends Component {
+
+
   messagesEndRef = createRef(null);
   chatItms = [
     {
@@ -70,6 +75,7 @@ export default class ChatContent extends Component {
     this.messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+
   componentDidMount() {
     window.addEventListener("keydown", (e) => {
       if (e.keyCode == 13) {
@@ -88,6 +94,7 @@ export default class ChatContent extends Component {
       }
     });
     this.scrollToBottom();
+    
   }
   onStateChange = (e) => {
     this.setState({ msg: e.target.value });
@@ -130,6 +137,9 @@ export default class ChatContent extends Component {
             })}
             <div ref={this.messagesEndRef} />
           </div>
+          <Fab variant="extended" style={{backgroundColor: "aqua", position: "relative", left:"1%"}}>
+            Conclude
+          </Fab>
         </div>
         <div className="content__footer">
           <div className="sendNewMessage">

@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { useEffect, useState } from "react";
 import { addToCart, getAllProducts, getProductsByCategory } from "../../API";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Products() {
   const [loading, setLoading] = useState(false);
@@ -140,13 +140,15 @@ function Products() {
 }
 
 function AddToCartButton({ item }) {
+  const navigate = useNavigate()
   const [loading, setLoading] = useState(false);
   const addProductToCart = () => {
     setLoading(true);
-    addToCart(item.id).then((res) => {
+    navigate("/chat")
+    /*addToCart(item.id).then((res) => {
       message.success(`${item.title} has been added to cart!`);
       setLoading(false);
-    });
+    });*/
   };
   return (
     <Button
