@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Search from "../../assets/search.svg";
+import SearchInput from "../searchInput/SearchInput";
  const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -18,6 +19,7 @@ import Search from "../../assets/search.svg";
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
+          
           <a className="navbar-brand page-scroll" href="#page-top">
             Cloud deal
           </a>{" "}

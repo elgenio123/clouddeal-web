@@ -5,6 +5,7 @@ import { RegisterProvider } from "../contexts/registerContext";
 
 function AppRoutes() {
   return (
+    
     <Routes>
       <Route path="/dashboard" element={<Category />}></Route>
       <Route path="/:categoryId" element={<Category />}></Route>
@@ -22,6 +23,7 @@ function AppRoutes() {
       />
       <Route path="/publish-product" element={<PublishProduct />}></Route>
     </Routes>
+  
   );
 }
 export default AppRoutes;
