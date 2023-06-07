@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { Category, ChatBody, ForgotPass, Login, PublishProduct, Register, Welcome } from "../components";
+import { Category, ChatBody, ForgotPass, Login, PublishProduct, Register, Welcome, Contacted } from "../components";
 import { RegisterProvider } from "../contexts/registerContext";
+
 
 
 function AppRoutes() {
@@ -11,6 +12,7 @@ function AppRoutes() {
       <Route path="/" element={<Welcome />} />
       <Route path="/chat" element={<ChatBody />} />
       <Route path="/login" element={<Login/>} />
+      <Route path="/contact" element={<Contacted/>} />
       <Route path="/forgot-password" element={<ForgotPass />} />
       <Route
         path="/register"
