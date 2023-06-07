@@ -1,27 +1,34 @@
 import React from 'react'
 import "./../../../public/css/sign.css"
+import Animate from '../animate/Animate';
 
 function Forgotpass() {
   return (
-    <div class="face face-back">
-    <div class="content">
-      <h2>Forgot your password?</h2>
-      <small>
-        Enter your email so we can send you a reset link for your
-        password
-      </small>
-      <form onsubmit="event.preventDefault()">
-        <div class="field-wrapper">
-          <input type="text" name="email" placeholder="email" />
-          <label>e-mail</label>
+    <>
+    <Animate />
+    <div className="wrapper">
+      <div className="rec-prism">
+        <div className="face face-front">
+          <div className="content">
+            <h2>Forgot your password?</h2>
+            <small>
+              Enter your email so we can send you a reset link for your password
+            </small>
+            <form onSubmit={() => event.preventDefault()}>
+              <div className="field-wrapper">
+                <input type="text" name="email" placeholder="email" />
+                <label>e-mail</label>
+              </div>
+              <div className="field-wrapper">
+                <input type="submit" />
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="field-wrapper">
-          <input type="submit" onclick="showThankYou()" />
-        </div>
-      </form>
+      </div>
     </div>
-  </div>
-  )
+    </>
+  );
 }
 
 export default Forgotpass

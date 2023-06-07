@@ -1,6 +1,7 @@
 import React from "react";
-
-export const Navigation = (props) => {
+import { Link } from "react-router-dom";
+import Search from "../../assets/search.svg";
+ const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -28,43 +29,62 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
+              <Link to="/"
+               className={({ isActive, isPending }) =>
+               isPending ? "link" : isActive ? "link" : ""
+             }>
+              <a  className="page-scroll">
+                Home
               </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
-                About
+            <Link to="/chat">
+              <a  className="page-scroll">
+                Chat
               </a>
+            </Link>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
-                Services
+            <Link to="/dashboard">
+              <a className="page-scroll">
+                Dashboard
               </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
+            <Link to="/publish-product">
+              <a  className="page-scroll">
+                Publish
               </a>
+              </Link>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
+            <Link to="/login">
+              <a className="page-scroll">
+                Login
               </a>
+              </Link>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
-                Team
+              <Link to="/register">
+              <a  className="page-scroll">
+                Register
               </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+            <Link to="/contact">
+              <a  className="page-scroll">
                 Contact
               </a>
+              </Link>
             </li>
+            <img src={Search} alt="search" id="search"/>
           </ul>
         </div>
       </div>
     </nav>
   );
 };
+export default Navigation

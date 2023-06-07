@@ -1,15 +1,15 @@
  const data = [
       {
-          "name":["name", "surname", "sex", "email", "phone"],
-          "type":["text", "text", "radio", "email", "number"]
+          "name":["Name", "Surname", "Sex", "Email"],
+          "type":["text", "text", "radio", "email"]
       },
 
       {
-        "name":["pseudo", "password", "confirmpass"],
-        "type":["text", "password", "password"]
+        "name":["Phone","Pseudo", "Password", "Confirmpass"],
+        "type":[ "number","text", "password", "password"]
       },
       {
-        "name": ["region", "town"],
+        "name": ["Region", "Town"],
         "type":["text", "text"]
       }
 ]

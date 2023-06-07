@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Login from "../login/login";
-import Register from "../register/register";
-import { RegisterProvider } from "../../contexts/registerContext";
+import { Link } from "react-router-dom";
 
 
 export const Header = (props) => {
@@ -29,25 +27,18 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <a
-                  onClick={toggleModal}
+                <Link to="/login"><a
                   className="btn btn-custom btn-lg page-scroll"
                 >
                   Login
-                </a>{" "}
-                <a
-                  onClick={toggleModalR}
+                </a>
+                </Link>{" "}
+                <Link to="/register"><a
                   className="btn btn-custom btn-lg page-scroll"
                 >
                   Register
-                </a>{" "}
-                <Login isModalOpen={isModalOpen} setModalOpen={setModalOpen} />
-                <RegisterProvider>
-                  <Register
-                    isModalOpenR={isModalOpenR}
-                    setModalOpenR={setModalOpenR}
-                  />
-                </RegisterProvider>
+                </a>
+                </Link>{" "}
               </div>
             </div>
           </div>

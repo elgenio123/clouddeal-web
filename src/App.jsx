@@ -1,15 +1,16 @@
 import React from "react";
 import "./App.css";
-import Welcome from "./components/welcome";
+import AppRoutes from "./routes";
+import { Footer, Navigation } from "./components";
 
 const App = () => {
 
 
   return (
     <>
-      <div>
-        <Welcome />
-      </div>
+      <Navigation />
+      <AppRoutes/>
+      <Footer />
     </>
   );
 };
