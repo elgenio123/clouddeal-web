@@ -41,11 +41,7 @@ import SearchInput from "../searchInput/SearchInput";
               </Link>
             </li>
             <li>
-            <Link to="/chat">
-              <a  className="page-scroll">
-                Chat
-              </a>
-            </Link>
+           
             </li>
             <li>
             <Link to="/dashboard">
