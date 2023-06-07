@@ -79,6 +79,11 @@ import Search from "../../assets/search.svg";
                 Contact
               </a>
               </Link>
+              <Link to="/payement">
+              <a  className="page-scroll">
+                payement
+              </a>
+              </Link>
             </li>
             <img src={Search} alt="search" id="search"/>
           </ul>
