@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "./payment.css"
+import Link from 'antd/es/typography/Link';
 
 function Payment() {
 
@@ -47,7 +48,7 @@ useEffect(()=> {
           <div className="modal__content">
             <h2>Your payment details</h2>
 
-            <form>
+            <form onSubmit={()=>event.preventDefault()}>
               <ul className="form-list">
                 <li className="form-list__row">
                   <label>Name</label>
@@ -60,24 +61,24 @@ useEffect(()=> {
                   </div>
                 </li>
                 <li className="form-list__row form-list__row--agree">
-                <input type="checkbox" name="save_cc" id='save-my-card' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <label htmlFor="save-my-card" className='save-my-card'>
-                   Save my card for future purchases
+                  <input type="checkbox" name="save_cc" id="save-my-card" />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <label htmlFor="save-my-card" className="save-my-card">
+                    Save my card for future purchases
                   </label>
-                
-                    
                 </li>
                 <li>
-                  <button type="submit" className="button">
-                    Pay Now
-                  </button>
+                  <Link to="/dashboard">
+                    <button type='submit' className="button">
+                      Pay Now
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </form>
           </div>
         </div>
-      </div>
-      
+      </div>  
     </>
   );
 }
