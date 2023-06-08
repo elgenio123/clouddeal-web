@@ -146,7 +146,6 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-     
     </div>
   );
 };
