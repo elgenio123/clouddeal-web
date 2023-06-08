@@ -37,7 +37,7 @@ const PayementForm = () => {
 
   <div>
     <form onSubmit={handleSubmit}>
-    <h2 className='title'>payement method</h2>
+    <h2 className='title'>Payment details</h2>
 
       <div className='items'>
       <div >
