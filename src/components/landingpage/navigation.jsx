@@ -77,6 +77,7 @@ import SearchInput from "../searchInput/SearchInput";
                 Contact
               </a>
               </Link>
+              
             </li>
             <img src={Search} alt="search" id="search"/>
           </ul>
