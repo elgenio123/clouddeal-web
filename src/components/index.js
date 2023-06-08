@@ -11,3 +11,5 @@ export {default as PublishProduct} from "./publish/PublishProduct"
 export {default as SearchInput} from "./searchInput/SearchInput"
 export {default as Payment} from "./mypayment/Payment"
 export {default as Contacted} from "./contacted/contacted"
+export {default as PayementForm } from "./payement/PayementForm";
+

@@ -77,6 +77,11 @@ import SearchInput from "../searchInput/SearchInput";
                 Contact
               </a>
               </Link>
+              <Link to="/payement">
+              <a  className="page-scroll">
+                payement
+              </a>
+              </Link>
             </li>
             <img src={Search} alt="search" id="search"/>
           </ul>
