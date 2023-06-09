@@ -11,4 +11,5 @@ export {default as PublishProduct} from "./publish/PublishProduct"
 export {default as SearchInput} from "./searchInput/SearchInput"
 export {default as Contacted} from "./contacted/contacted"
 export {default as PayementForm } from "./payement/PayementForm";
+export {default as Header} from "./Header/index"
 

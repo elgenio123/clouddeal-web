@@ -18,12 +18,7 @@
   }
 }
 
-#search{
-  position: absolute;
-  cursor: pointer;
-  top: 35%;
-  left: 96%;
-}
+
 link{
   color: black;
 }
@@ -43,7 +38,7 @@ link{
   display: flex;
   flex: 1;
   overflow-y: auto;
-  margin-top: 60px;
+  
 }
 .appFooter{
   height: 60px;
@@ -52,10 +47,76 @@ link{
   justify-content: space-evenly;
   align-items: center;
 }
-.itemCard, .itemCardBadge{
+ .itemCardBadge, .itemCard{
   margin: 8px;
+  border-radius: 20px;
+  background: rgba(38, 202, 202, 0.3);
 }
+
 .itemCardImage{
   height: 150px !important;
   object-fit: scale-down;
 }
+
+.container .navbar-header{
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  margin-top: 5px;
+  padding: 0 2%;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(136, 135, 135);
+  margin-left: 2%;
+  margin-left: 2%;
+}
+
+
+.search {
+  width: 500px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  background: #eceff1;
+  margin-top: 5px;
+  margin-left: 10%;
+}
+
+
+.search-img {
+  cursor: pointer;
+  position: relative;
+  right: 3%;
+  top: -7px;
+}
+
+#button-publish{
+  width: 200px;
+  height: 50px;
+  padding: 2px ;
+  border-radius: 50px;
+  margin-left: 3%;
+}
+#login-container, #register-container, #userprofile-container{
+  width: 70px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 1%;
+  margin-right: 1%;
+ }
+
+ #login-container img,#register-container img, #userprofile-container img{
+  width: 30px;
+  height: 30px;
+  
+ 
+}
+
+ #login-container button,#register-container button, #userprofile-container button{
+  position: relative;
+  left: -30px;
+  background-color: inherit;
+}
+
+
