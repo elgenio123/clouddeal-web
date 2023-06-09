@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
   }
-  to {
-    transform: rotate(360deg);
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
+ 
+
+  #portfolio {
+    width: 110%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#search{
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  left: 96%;
+}
+link{
+  color: black;
 }
 
-.card {
-  padding: 2em;
+.soppingCartIcon{
+  font-size: 30px;
+  margin-right: 16px;
+  cursor: pointer;
 }
-
-.read-the-docs {
-  color: #888;
+.productsContainer{
+  padding: 8px;
+}
+.appMenu{
+  border: none;
+}
+.pageContent{
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 60px;
+}
+.appFooter{
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.itemCard, .itemCardBadge{
+  margin: 8px;
+}
+.itemCardImage{
+  height: 150px !important;
+  object-fit: scale-down;
 }
