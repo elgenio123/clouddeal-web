@@ -88,7 +88,7 @@ function Products() {
       </div>
       <List
         loading={loading}
-        grid={{ column: 3 }}
+        grid={{ column: 4 }}
         renderItem={(product, index) => {
           return (
             <Badge.Ribbon

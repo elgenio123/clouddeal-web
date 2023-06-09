@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Category, ChatBody, ForgotPass, Login, PublishProduct, Register, Welcome,Contacted,PayementForm } from "../components";
+import { Category, ChatBody, ForgotPass, Login, PublishProduct, Register, Welcome,Contacted,PayementForm, Header } from "../components";
 
 import { RegisterProvider } from "../contexts/registerContext";
 
@@ -9,7 +9,7 @@ function AppRoutes() {
   return (
     
     <Routes>
-      <Route path="/dashboard" element={<Category />}></Route>
+      <Route path="/dashboard" element={<><Header/><Category /></>}></Route>
       <Route path="/:categoryId" element={<Category />}></Route>
       <Route path="/" element={<Welcome />} />
       <Route path="/chat" element={<ChatBody />} />
